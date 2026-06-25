@@ -91,7 +91,7 @@ function CopilotView() {
             <div className="h-full rounded-lg w-full overflow-y-auto bg-[#161B22] p-2 border border-[#30363D]">
                 <ReactMarkdown
                     components={{
-                        code({ inline, className, children, ...props }) {
+                        code({ inline, className, children, ...props } : any) {
                             const match = /language-(\w+)/.exec(className || "");
                             const language = match ? match[1] : "javascript";
 

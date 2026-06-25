@@ -102,7 +102,7 @@ function FileStructureView() {
                     key={item.id}
                     item={item}
                     setSelectedDirId={setSelectedDirId}
-                    className="p-2 bg-[#122A55] rounded-md shadow-md hover:bg-[#1A3A6F] transition"
+                   
                 />
             ))
         ) : (

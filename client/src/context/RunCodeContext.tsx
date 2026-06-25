@@ -81,7 +81,7 @@ const RunCodeContextProvider = ({ children }: { children: ReactNode }) => {
 
             // Check if input is required
             let userInput = input;
-            const code = activeFile.content;
+            const code = activeFile.content ?? "";
 
             // Count occurrences of input functions
             const inputCount = (code.match(/\b(cin|scanf|input)\b/g) || []).length;

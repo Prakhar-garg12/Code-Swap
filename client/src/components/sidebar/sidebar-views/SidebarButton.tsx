@@ -1,4 +1,3 @@
-import { useChatRoom } from "@/context/ChatContext"
 import { useViews } from "@/context/ViewContext"
 import { VIEWS } from "@/types/view"
 import { useState } from "react"
@@ -12,7 +11,7 @@ interface ViewButtonProps {
 
 const ViewButton = ({ viewName, icon }: ViewButtonProps) => {
     const { activeView, setActiveView, isSidebarOpen, setIsSidebarOpen } = useViews()
-    const { isNewMessage } = useChatRoom()
+ 
     const [showTooltip, setShowTooltip] = useState(true)
 
     const handleViewClick = (viewName: VIEWS) => {

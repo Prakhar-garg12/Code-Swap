@@ -126,7 +126,9 @@ function FilesView() {
                     };
                     children.push(targetDirectory);
                 }
-
+                if (!targetDirectory.children) {
+                    targetDirectory.children = [];
+                }
                 targetDirectory.children.push(newFile);
             } else {
                 children.push(newFile);
